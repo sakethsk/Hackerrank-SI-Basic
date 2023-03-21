@@ -29,4 +29,29 @@ Explanation 0
 
 Self Explanatory
 '''
+import java.io.*;
+import java.util.*;
 
+public class Solution {
+ public static void main(String[] args)
+ {
+     Scanner sc=new Scanner(System.in);
+     int l=sc.nextInt();
+     int i=1, j=0, k=0, m=0;
+     System.out.print(i+" ");
+     System.out.println("");
+     for(i=2;i<=l;i++)
+     {
+         System.out.print(i+" ");
+         k=l-1;
+         m=i;
+         for(j=1;j<i;j++)
+         {
+             m=m+k;
+             System.out.print(m+" ");
+             k--;
+         }
+         System.out.println("");
+     }
+ }
+}
